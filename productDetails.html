@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+
+    <!-- icons link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/landPage.css" />
+    <link rel="stylesheet" href="css/productDetails.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <a href="#" class="logo"><img src="/images/logo.jpg" alt="logo" /></a>
+      <nav class="navbar">
+        <a href="/landPage.html">home</a>
+        <a href="/landPage.html?#products">products</a>
+        <a href="/landPage.html?#contact">contact&nbsp;us</a>
+        <a href="/sign_up.html">register</a>
+        <a href="/sign_in.html">log&nbsp;in</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+
+      <form action="/action_page.php" method="get" class="search-form">
+        <input
+          type="search"
+          name="search"
+          placeholder="search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- card section starts -->
+    <div class="card-wrapper">
+      <div class="card">
+        <!-- part left -->
+        <div class="product-imgs">
+          <div class="img-display">
+            <div class="img-showcase">
+              <img src="/images/product_img1.jpg" alt="product image" />
+              <img src="/images/product_img2.jpg" alt="product image" />
+              <img src="/images/product_img3.jpg" alt="product image" />
+              <img src="/images/product_img4.jpg" alt="product image" />
+            </div>
+          </div>
+          <div class="img-select">
+            <div class="img-item">
+              <a href="#" data-id="1">
+                <img src="/images/product_img1.jpg" alt="product image" />
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="2">
+                <img src="/images/product_img2.jpg" alt="product image" />
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="3">
+                <img src="/images/product_img3.jpg" alt="product image" />
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#" data-id="4">
+                <img src="/images/product_img4.jpg" alt="product image" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- part right -->
+        <div class="product-content">
+          <h2 class="product-title">Product name</h2>
+          <div class="stars">
+            <form action="/action_page.php" method="get">
+              <input class="star star-5" id="star-5" type="radio" name="star" />
+              <label class="star star-5" for="star-5"></label>
+              <input class="star star-4" id="star-4" type="radio" name="star" />
+              <label class="star star-4" for="star-4"></label>
+              <input class="star star-3" id="star-3" type="radio" name="star" />
+              <label class="star star-3" for="star-3"></label>
+              <input class="star star-2" id="star-2" type="radio" name="star" />
+              <label class="star star-2" for="star-2"></label>
+              <input class="star star-1" id="star-1" type="radio" name="star" />
+              <label class="star star-1" for="star-1"></label>
+            </form>
+          </div>
+
+          <div class="product-price">
+            <p class="new-price">New Price: <span>lei 20.00</span></p>
+            <p class="last-price">Old Price: <span>lei 25.00</span></p>
+            <div class="offer">20% off</div>
+          </div>
+
+          <div class="product-detail">
+            <h2>about this item:</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              asperiores magnam libero nesciunt aperiam sint eaque. Deserunt
+              modi laborum quasi cumque autem, veritatis animi neque hic sunt
+              fuga voluptas exercitationem!
+            </p>
+            <ul>
+              <li>Color: <span>Black</span></li>
+              <li>Available: <span>in stock</span></li>
+              <li>Category: <span>Product Name</span></li>
+              <li>Shipping Area: <span>All over the world</span></li>
+              <li>Shipping Fee: <span>Free</span></li>
+            </ul>
+          </div>
+
+          <div class="purchase-info">
+            <input type="number" min="0" value="1" />
+            <button type="button" class="btn">Add to Cart</button>
+            <button type="button" class="btn">Compare</button>
+          </div>
+
+          <div class="share">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/" class="fab fa-twitter"></a>
+            <a href="https://ro.pinterest.com/" class="fab fa-pinterest"></a>
+            <a href="https://ro.linkedin.com/" class="fab fa-linkedin"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/productDetails.js"></script>
+  </body>
+</html>
+<!-- project in progress -->

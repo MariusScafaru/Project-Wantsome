@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Land Page</title>
+
+    <!-- icons link extern -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/landSlide.css" />
+    <link rel="stylesheet" href="css/landPage.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#" class="logo"><img src="/images/logo.jpg" alt="logo" /></a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#products">products</a>
+        <a href="#contact">contact&nbsp;us</a>
+        <a href="/sign_up.html">register</a>
+        <a href="/sign_in.html">log&nbsp;in</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+
+      <form action="/action_page.php" method="get" class="search-form">
+        <input
+          type="search"
+          name="search"
+          placeholder="search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- Header Section Ends -->
+
+    <!-- Big Slideshow -->
+    <!-- delay 7 secs transition time 0.4 secs-->
+    <div id="slides" class="ms-slides" data-delay="7000" data-transition="400">
+      <!-- Slide Show Elements -->
+      <div class="ms-slides__inner">
+        <img src="images/banner1.jpg" alt="women" />
+        <img src="images/banner2.jpg" alt="girls" />
+        <img src="images/banner3.jpg" alt="children" />
+      </div>
+
+      <!-- Show Next and Previous Buttons -->
+      <a href="#" class="ms-slides__next-button"></a>
+      <a href="#" class="ms-slides__prev-button"></a>
+    </div>
+
+    <!-- Big Slideshow Ends -->
+
+    <!-- Banner Section Starts  -->
+
+    <section class="banner-container">
+      <div class="banner">
+        <img src="images/shop_banner_img1.jpg" alt="" />
+        <div class="content">
+          <span>special offer</span>
+          <h3>up to 50% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <img src="images/shop_banner_img2.jpg" alt="" />
+        <div class="content">
+          <span>special offer</span>
+          <h3>up to 50% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Section Ends -->
+
+    <!-- Products Section Starts  -->
+
+    <section class="products" id="products">
+      <h1 class="heading">exclusive products</h1>
+
+      <div class="filter-buttons">
+        <div class="buttons active" data-filter="all">all</div>
+        <div class="buttons" data-filter="arrivals">new arrivals</div>
+        <div class="buttons" data-filter="special">special offer</div>
+        <div class="buttons" data-filter="seller">best seller</div>
+      </div>
+
+      <div class="box-container">
+        <div class="box" data-item="special">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product_img2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>product name</h3>
+            <div class="price">
+              <div class="amount">lei 20.00</div>
+              <div class="cut">lei 25.00</div>
+              <div class="offer">20% off</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(50)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-item="seller">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product_img3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>product name</h3>
+            <div class="price">
+              <div class="amount">lei 20.00</div>
+              <div class="cut">lei 25.00</div>
+              <div class="offer">20% off</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(50)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-item="arrivals">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product_img4.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>product name</h3>
+            <div class="price">
+              <div class="amount">lei 20.00</div>
+              <div class="cut">lei 25.00</div>
+              <div class="offer">20% off</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(50)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-item="arrivals">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product_img6.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>product name</h3>
+            <div class="price">
+              <div class="amount">lei 20.00</div>
+              <div class="cut">lei 25.00</div>
+              <div class="offer">20% off</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(50)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-item="special">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product_img7.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>product name</h3>
+            <div class="price">
+              <div class="amount">lei 20.00</div>
+              <div class="cut">lei 25.00</div>
+              <div class="offer">20% off</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(50)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-item="seller">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product_img8.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>product name</h3>
+            <div class="price">
+              <div class="amount">lei 20.00</div>
+              <div class="cut">lei 25.00</div>
+              <div class="offer">20% off</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(50)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-item="seller">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product_img9.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>product name</h3>
+            <div class="price">
+              <div class="amount">lei 20.00</div>
+              <div class="cut">lei 25.00</div>
+              <div class="offer">20% off</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(50)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-item="special">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product_img11.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>product name</h3>
+            <div class="price">
+              <div class="amount">lei 20.00</div>
+              <div class="cut">lei 25.00</div>
+              <div class="offer">20% off</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(50)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-item="seller">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="images/product_img12.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>product name</h3>
+            <div class="price">
+              <div class="amount">lei 20.00</div>
+              <div class="cut">lei 25.00</div>
+              <div class="offer">20% off</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>(50)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section Ends -->
+
+    <!-- Deal Section Starts  -->
+
+    <section class="deal">
+      <div class="image">
+        <img src="images/tranding_img.png" alt="" />
+      </div>
+
+      <div class="content">
+        <span>new season trending!</span>
+        <h3>best summer collection</h3>
+        <p>sale get up to 50% off</p>
+        <a href="#" class="btn">shop now</a>
+      </div>
+    </section>
+
+    <!-- Deal Section Ends -->
+
+    <!-- Contact Section Starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading">contact us</h1>
+
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>address</h3>
+          <p>iasi, romania - 700028</p>
+        </div>
+
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <p style="text-transform: none">evaneself@yahoo.com</p>
+        </div>
+
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>phone</h3>
+          <p>+4-0740000000</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <form action="/action_page.php" method="get">
+          <h3>ask for more</h3>
+          <div class="inputBox">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="Your Number" />
+            <input type="text" placeholder="Your Subject" />
+          </div>
+          <textarea placeholder="your message" cols="30" rows="10"></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+
+        <iframe
+          class="map"
+          src="https://maps.google.com/maps?q=Iasi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Contact Section Ends -->
+
+    <!-- Footer Section Starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>category</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> women </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> girls </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> kids </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> best collection </a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> products </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my listing </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> new offers </a>
+        </div>
+      </div>
+
+      <div class="share">
+        <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/" class="fab fa-twitter"></a>
+        <a href="https://ro.pinterest.com/" class="fab fa-pinterest"></a>
+        <a href="https://ro.linkedin.com/" class="fab fa-linkedin"></a>
+        <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+      </div>
+    </section>
+
+    <!-- Footer Section Ends -->
+    <!-- Custom JS File -->
+    <script src="/js/landSlide.js"></script>
+    <script src="/js/landPage.js"></script>
+  </body>
+</html>
+<!-- Project In Progress -->
