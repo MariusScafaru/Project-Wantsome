@@ -5,7 +5,7 @@ const MS_SLIDES_PREV_BUTTON = ".ms-slides__prev-button";
 const BUTTON_COLOR = "rgba(255,255,255,0.5)";
 const BUTTON_COLOR_SELECTED = "rgb(255, 127, 191)";
 
-// Make Slides
+// the slide
 
 function makeSlideshow(slides) {
   // const slides = document.getElementById(slidesId)
@@ -36,7 +36,7 @@ function makeSlideshow(slides) {
     });
   }
 
-  // Setup timer
+  // setup timer
 
   let delay = parseInt(slides.dataset.delay);
   let transition = parseInt(slides.dataset.transition);
@@ -82,6 +82,7 @@ function makeSlideshow(slides) {
     slidesInner.style.transform = `translate3d(${
       index * -slidesWidth
     }px, 0, 0)`;
+
     // console.log(index * -slidesWidth)
     indicators.forEach(function (el, i) {
       if (i === index) {
