@@ -28,8 +28,8 @@ function logIn(event) {
     if (!user.email.match(emailRegex)) {
       alert("Invalid email!");
       event.preventDefault();
-    } else if (user.password.length < 8) {
-      alert("At least 8 characters needed!");
+    } else if (user.password.length < 9) {
+      alert("At least 9 characters needed!");
       event.preventDefault();
     } else {
       users.push(user);
