@@ -554,52 +554,6 @@ section {
   }
 }
 
-.review {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background: $light-bg;
-
-  .slide {
-    border-radius: 0.5rem;
-    background: #fff;
-    border: $border;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: $box-shadow;
-
-    p {
-      font-size: 1.4rem;
-      color: $light-color;
-      line-height: 2;
-    }
-
-    .user {
-      padding-top: 2rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      justify-content: center;
-
-      img {
-        height: 7rem;
-        width: 7rem;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-
-      h3 {
-        font-size: 2.2rem;
-        color: $black;
-      }
-
-      span {
-        font-size: 1.5rem;
-        color: $red;
-      }
-    }
-  }
-}
-
 .contact {
   .icons-container {
     @include grid(25rem);
@@ -693,75 +647,12 @@ section {
   }
 }
 
-.blogs {
-  .slide {
-    border: $border;
-    border-radius: 0.5rem;
-    box-shadow: $box-shadow;
-    overflow: hidden;
-
-    .image {
-      height: 25rem;
-      width: 100%;
-      overflow: hidden;
-
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    &:hover .image img {
-      transform: scale(1.2);
-    }
-
-    .content {
-      padding: 2rem;
-
-      h3 {
-        font-size: 2.2rem;
-        color: $black;
-      }
-
-      p {
-        font-size: 1.4rem;
-        color: $light-color;
-        line-height: 2;
-        padding: 1rem 0;
-      }
-
-      .icons {
-        margin-top: 2.5rem;
-        padding-top: 2rem;
-        border-top: $border;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        a {
-          font-size: 1.4rem;
-          color: $light-color;
-
-          i {
-            padding-right: 0.5rem;
-            color: $red;
-          }
-
-          &:hover {
-            color: $red;
-          }
-        }
-      }
-    }
-  }
-}
-
 .footer {
-  background: $light-bg;
+  background-image: url("/images/background2.jpg");
+  background-size: cover;
 
   .box-container {
-    @include grid(25rem);
+    @include grid(15rem);
 
     .box {
       h3 {
@@ -773,14 +664,14 @@ section {
       p {
         font-size: 1.5rem;
         color: $light-color;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         line-height: 2;
       }
 
       a {
         display: block;
         font-size: 1.4rem;
-        color: $light-color;
+        color: $black;
         padding: 1rem 0;
 
         i {
@@ -800,7 +691,7 @@ section {
   }
 
   .share {
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-align: center;
 
     a {
