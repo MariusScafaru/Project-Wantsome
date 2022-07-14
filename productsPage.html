@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Land Page</title>
+    <title>Products Page</title>
 
     <!-- icons link extern -->
     <link
@@ -13,8 +13,7 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/landSlide.css" />
-    <link rel="stylesheet" href="css/landPage.css" />
+    <link rel="stylesheet" href="css/productsPage.css" />
   </head>
   <body>
     <!-- header section starts  -->
@@ -22,8 +21,8 @@
     <header class="header">
       <a href="#" class="logo"><img src="/images/logo.jpg" alt="logo" /></a>
       <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="/productsPage.html">products</a>
+        <a href="/landPage.html">home</a>
+        <a href="#">products</a>
         <a href="#contact">contact&nbsp;us</a>
         <a href="/sign_up.html">register</a>
         <a href="/sign_in.html">log&nbsp;out</a>
@@ -49,57 +48,16 @@
 
     <!-- Header Section Ends -->
 
-    <!-- Big Slideshow -->
-    <!-- delay 7 secs transition time 0.4 secs-->
-    <div id="slides" class="ms-slides" data-delay="7000" data-transition="400">
-      <!-- Slide Show Elements -->
-      <div class="ms-slides__inner">
-        <img src="images/banner1.jpg" alt="women" />
-        <img src="images/banner2.jpg" alt="girls" />
-        <img src="images/banner3.jpg" alt="children" />
-      </div>
-
-      <!-- Show Next and Previous Buttons -->
-      <a href="#" class="ms-slides__next-button"></a>
-      <a href="#" class="ms-slides__prev-button"></a>
-    </div>
-
-    <!-- Big Slideshow Ends -->
-
-    <!-- Banner Section Starts  -->
-
-    <section class="banner-container" id="special">
-      <div class="banner">
-        <img src="images/shop_banner_img1.jpg" alt="" />
-        <div class="content">
-          <span>special offer</span>
-          <h3>up to 50% off</h3>
-          <a href="#" class="btn">shop now</a>
-        </div>
-      </div>
-
-      <div class="banner">
-        <img src="images/shop_banner_img2.jpg" alt="" />
-        <div class="content">
-          <span>special offer</span>
-          <h3>up to 50% off</h3>
-          <a href="#" class="btn">shop now</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Banner Section Ends -->
-
     <!-- Products Section Starts  -->
 
     <section class="products" id="products">
       <h1 class="heading">exclusive products</h1>
 
       <div class="filter-buttons">
-        <div class="buttons active" data-filter="all">all the exclusives</div>
-        <div class="buttons" data-filter="arrivals">new arrivals</div>
-        <div class="buttons" data-filter="special">special offer</div>
-        <div class="buttons" data-filter="seller">best seller</div>
+        <div class="buttons" data-filter="dresses"><h4>dresses</h4></div>
+        <div class="buttons" data-filter="skirts"><h4>skirts</h4></div>
+        <div class="buttons" data-filter="jackets"><h4>jackets</h4></div>
+        <div class="buttons" data-filter="tracsuit"><h4>tracsuit</h4></div>
       </div>
 
       <div class="box-container">
@@ -350,74 +308,6 @@
 
     <!-- Products Section Ends -->
 
-    <!-- Deal Section Starts  -->
-
-    <section class="deal" id="deal">
-      <div class="image">
-        <img src="images/tranding_img.png" alt="" />
-      </div>
-
-      <div class="content">
-        <span>new season trending!</span>
-        <h3>summer collection</h3>
-        <p>sale get up to 50% off</p>
-        <a href="#" class="btn">shop now</a>
-      </div>
-    </section>
-
-    <!-- Deal Section Ends -->
-
-    <!-- Contact Section Starts  -->
-
-    <section class="contact" id="contact">
-      <h1 class="heading">contact us</h1>
-
-      <div class="icons-container">
-        <div class="icons">
-          <i class="fas fa-map-marker-alt"></i>
-          <h3>address</h3>
-          <p>iasi, romania - 700028</p>
-        </div>
-
-        <div class="icons">
-          <i class="fas fa-envelope"></i>
-          <h3>email</h3>
-          <p style="text-transform: none">evaneself@yahoo.com</p>
-        </div>
-
-        <div class="icons">
-          <i class="fas fa-phone"></i>
-          <h3>phone</h3>
-          <p>+4-0740000000</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <form action="/action_page.php" method="get">
-          <h3>ask for more</h3>
-          <div class="inputBox">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="Your Number" />
-            <input type="text" placeholder="Your Subject" />
-          </div>
-          <textarea placeholder="your message" cols="30" rows="10"></textarea>
-          <input type="submit" value="send message" class="btn" />
-        </form>
-
-        <iframe
-          class="map"
-          src="https://maps.google.com/maps?q=Iasi&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
-      </div>
-    </section>
-
-    <!-- Contact Section Ends -->
-
     <!-- Footer Section Starts  -->
 
     <section class="footer">
@@ -464,7 +354,6 @@
 
     <!-- Footer Section Ends -->
     <!-- Custom JS File -->
-    <script src="/js/landSlide.js"></script>
     <script src="/js/landPage.js"></script>
   </body>
 </html>

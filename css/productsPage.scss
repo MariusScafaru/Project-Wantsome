@@ -165,118 +165,6 @@ section {
   display: none;
 }
 
-.home {
-  padding: 0;
-  padding-top: 7.6rem;
-
-  .home-slider {
-    .slide {
-      min-height: 46vh;
-      display: flex;
-      align-items: center;
-      padding: 2rem;
-      padding-left: 7%;
-      background-size: cover !important;
-      background-position: center !important;
-
-      .content {
-        span {
-          font-size: 2rem;
-          color: $light-color;
-        }
-
-        h3 {
-          font-size: 6rem;
-          color: $black;
-          padding-top: 0.5rem;
-        }
-      }
-    }
-  }
-
-  .swiper-button-next {
-    top: 86%;
-    right: 9rem;
-  }
-
-  .swiper-button-prev {
-    top: 86%;
-    right: 15rem;
-    left: auto;
-  }
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 0.5rem;
-  background: $background1;
-  box-shadow: $box-shadow;
-  border: $border;
-  color: $black;
-
-  &:hover {
-    background: $background2;
-    color: #fff;
-  }
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 2rem;
-}
-
-.banner-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-
-  .banner {
-    flex: 1 1 42rem;
-    overflow: hidden;
-    height: 30rem;
-    position: relative;
-    box-shadow: $box-shadow;
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    &:hover img {
-      transform: scale(1.2);
-    }
-
-    .content {
-      position: absolute;
-      top: 50%;
-      right: 5rem;
-      transform: translateY(-50%);
-
-      span {
-        font-size: 2rem;
-        color: $light-color;
-      }
-
-      h3 {
-        font-size: 3.2rem;
-        color: $black;
-        padding-top: 0.5rem;
-      }
-    }
-  }
-}
-
-@keyframes fadeUp {
-  0% {
-    transform: translateY(5rem);
-    opacity: 0;
-  }
-}
-
 .products {
   .filter-buttons {
     display: flex;
@@ -414,135 +302,6 @@ section {
   }
 }
 
-.deal {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-  background: linear-gradient(#fff 20%, #fadbe3 40%);
-
-  .image {
-    flex: 1 1 42rem;
-
-    img {
-      width: 40rem;
-    }
-  }
-
-  .content {
-    flex: 1 1 42rem;
-
-    span {
-      color: $red;
-      font-size: 1.7rem;
-    }
-
-    h3 {
-      color: $black;
-      font-size: 3rem;
-      padding: 0.5rem 0;
-    }
-
-    p {
-      color: $light-color;
-      font-size: 2rem;
-    }
-  }
-}
-
-.contact {
-  .icons-container {
-    @include grid(25rem);
-
-    .icons {
-      padding: 2rem;
-      border-radius: 0.5rem;
-      border: $border;
-      box-shadow: $box-shadow;
-      text-align: center;
-
-      i {
-        font-size: 2.5rem;
-        height: 6rem;
-        width: 6rem;
-        line-height: 6rem;
-        border: $border;
-        @extend %text-stroke;
-        border-radius: 50%;
-      }
-
-      h3 {
-        font-size: 2.2rem;
-        padding: 1rem 0;
-        color: $black;
-      }
-
-      p {
-        font-size: 1.5rem;
-        line-height: 2;
-        color: $light-color;
-      }
-    }
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 2rem;
-
-    form {
-      flex: 1 1 42rem;
-      padding: 2rem;
-      border: $border;
-      box-shadow: $box-shadow;
-      border-radius: 0.5rem;
-
-      h3 {
-        font-size: 3rem;
-        padding-bottom: 1rem;
-        color: $black;
-      }
-
-      .inputBox {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        input {
-          width: 49%;
-        }
-      }
-
-      .inputBox input,
-      textarea {
-        border: $border;
-        border-radius: 0.5rem;
-        padding: 1rem 1.2rem;
-        font-size: 1.6rem;
-        color: $black;
-        text-transform: none;
-        margin: 0.7rem 0;
-      }
-
-      textarea {
-        height: 15rem;
-        resize: none;
-        width: 100%;
-      }
-    }
-
-    .map {
-      flex: 1 1 42rem;
-      width: 100%;
-      padding: 2rem;
-      border: $border;
-      border-radius: 0.5rem;
-      box-shadow: $box-shadow;
-    }
-  }
-}
-
 .footer {
   background-image: url("/images/background2.jpg");
   background-size: cover;
@@ -660,10 +419,6 @@ section {
       right: 0;
     }
   }
-
-  .home .home-slider .slide {
-    padding-left: 2rem;
-  }
 }
 
 @media (max-width: 450px) {
@@ -675,25 +430,8 @@ section {
     font-size: 3rem;
   }
 
-  .banner-container .banner .content {
-    right: 2rem;
-
-    h3 {
-      font-size: 2rem;
-    }
-  }
-
   .products .box-container .box {
     width: 100%;
-  }
-
-  .deal .image img {
-    width: 100%;
-  }
-
-  .deal .content {
-    padding-top: 2rem;
-    text-align: center;
   }
 
   .contact .row form .inputBox input {

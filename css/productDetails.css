@@ -255,14 +255,12 @@ label.star:before {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
   }
-
   .card-wrapper {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .product-imgs {
     display: flex;
     flex-direction: column;
@@ -271,7 +269,6 @@ label.star:before {
     max-width: 50rem;
     min-width: 34rem;
   }
-
   .product-content {
     padding-top: 0;
   }
