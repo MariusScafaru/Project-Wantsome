@@ -11,9 +11,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/productsPage.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- header section starts  -->
@@ -22,17 +27,24 @@
       <a href="#" class="logo"><img src="/images/logo.jpg" alt="logo" /></a>
       <nav class="navbar">
         <a href="/landPage.html">home</a>
-        <a href="#">products</a>
-        <a href="#contact">contact&nbsp;us</a>
+        <a href="/landPage.html#deal"
+          ><em style="color: rgb(235, 21, 142)">new!</em></a
+        >
+        <a href="/productsPage.html">products</a>
         <a href="/sign_up.html">register</a>
-        <a href="/sign_in.html">log&nbsp;out</a>
+        <a href="/sign_in.html">log&nbsp;in</a>
       </nav>
 
       <div class="icons">
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search"></div>
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html">
+          <div class="cart">
+            <i class="fas fa-shopping-cart" style="color: white"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+          </div>
+        </a>
+        <!-- <a href="#" class="fas fa-heart"></a> -->
       </div>
 
       <form action="/action_page.php" method="get" class="search-form">
@@ -45,268 +57,9 @@
         <label for="search-box" class="fas fa-search"></label>
       </form>
     </header>
-
     <!-- Header Section Ends -->
 
-    <!-- Products Section Starts  -->
-
-    <section class="products" id="products">
-      <h1 class="heading">exclusive products</h1>
-
-      <div class="filter-buttons">
-        <div class="buttons" data-filter="dresses"><h4>dresses</h4></div>
-        <div class="buttons" data-filter="skirts"><h4>skirts</h4></div>
-        <div class="buttons" data-filter="jackets"><h4>jackets</h4></div>
-        <div class="buttons" data-filter="tracsuit"><h4>tracsuit</h4></div>
-      </div>
-
-      <div class="box-container">
-        <div class="box" data-item="special">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="images/product_img2.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>product name</h3>
-            <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
-              <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box" data-item="seller">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="images/product_img3.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>product name</h3>
-            <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
-              <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box" data-item="arrivals">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="images/product_img4.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>product name</h3>
-            <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
-              <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box" data-item="arrivals">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="images/product_img6.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>product name</h3>
-            <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
-              <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box" data-item="special">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="images/product_img7.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>product name</h3>
-            <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
-              <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box" data-item="seller">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="images/product_img8.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>product name</h3>
-            <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
-              <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box" data-item="seller">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="images/product_img9.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>product name</h3>
-            <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
-              <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box" data-item="special">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="images/product_img11.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>product name</h3>
-            <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
-              <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box" data-item="seller">
-          <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
-          </div>
-          <div class="image">
-            <img src="images/product_img12.jpg" alt="" />
-          </div>
-          <div class="content">
-            <h3>product name</h3>
-            <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
-              <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Products Section Ends -->
+    <div class="shop" id="shop"></div>
 
     <!-- Footer Section Starts  -->
 
@@ -317,19 +70,19 @@
           <a href="#"> <i class="fas fa-arrow-right"></i> dresses </a>
           <a href="#"> <i class="fas fa-arrow-right"></i> skirts </a>
           <a href="#"> <i class="fas fa-arrow-right"></i> jackets </a>
-          <a href="#"> <i class="fas fa-arrow-right"></i> tracksuits </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> gim suits </a>
         </div>
 
         <div class="box">
           <h3>quick links</h3>
-          <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
-          <a href="#special">
+          <a href="/landPage.html"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="/landPage.html#special">
             <i class="fas fa-arrow-right"></i> special offer
           </a>
-          <a href="#products">
+          <a href="/landPage.html#products">
             <i class="fas fa-arrow-right"></i> exclusive products
           </a>
-          <a href="#deal">
+          <a href="/landPage.html#deal">
             <i class="fas fa-arrow-right"></i> summer collection
           </a>
         </div>
@@ -351,10 +104,11 @@
         <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
       </div>
     </section>
-
-    <!-- Footer Section Ends -->
     <!-- Custom JS File -->
     <script src="/js/landPage.js"></script>
+    <!-- Footer Section Ends -->
   </body>
+  <script src="src/Data.js"></script>
+  <script src="src/main.js"></script>
 </html>
 <!-- Project In Progress -->

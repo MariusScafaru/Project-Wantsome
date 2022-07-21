@@ -1,4 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 0.5rem 1rem #fa7373;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9%;
+  background-image: url("/images/background2.jpg");
+  background-size: cover;
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: #130f40;
+  font-weight: bolder;
+}
+.header .logo img {
+  max-height: 75px;
+  max-width: 150px;
+}
+.header .logo i {
+  color: #cc3586;
+}
+.header .navbar a {
+  font-size: 2rem;
+  color: #130f40;
+  margin: 0 1rem;
+}
+.header .navbar a:hover {
+  color: #cc3586;
+}
+.header .icons div,
+.header .icons a {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+}
+.header .search-form {
+  position: absolute;
+  top: 115%;
+  right: -105%;
+  width: 50rem;
+  height: 5.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem #fa7373;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+.header .search-form.active {
+  right: 2rem;
+  transition: 0.4s linear;
+}
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  text-transform: none;
+  color: #130f40;
+  padding: 0 1.2rem;
+}
+.header .search-form label {
+  font-size: 2.2rem;
+  margin-right: 1.7rem;
+}
+
 * {
   font-family: "Tangerine", serif;
   margin: 0;
@@ -12,14 +83,14 @@
   color: #130f40;
 }
 
-.contact .icons-container .icons i, .products .box-container .box .icons a, .header .search-form label, .header .icons div,
-.header .icons a {
+.contact .icons-container .icons i, .products .box-container .box .icons a, .header .icons div,
+.header .icons a, .header .search-form label {
   color: #fff;
   cursor: pointer;
   -webkit-text-stroke: 0.1rem #130f40;
 }
-.contact .icons-container .icons i:hover, .products .box-container .box .icons a:hover, .header .search-form label:hover, .header .icons div:hover,
-.header .icons a:hover {
+.contact .icons-container .icons i:hover, .products .box-container .box .icons a:hover, .header .icons div:hover,
+.header .icons a:hover, .header .search-form label:hover {
   -webkit-text-stroke: 0.1rem #cc3586;
 }
 
@@ -66,76 +137,6 @@ section {
 }
 .btn:hover {
   background: linear-gradient(#3225bf, #130f40);
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  box-shadow: 0 0.5rem 1rem #fa7373;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 9%;
-  background-image: url("/images/background2.jpg");
-  background-size: cover;
-}
-.header .logo {
-  font-size: 2.5rem;
-  color: #130f40;
-  font-weight: bolder;
-}
-.header .logo img {
-  max-height: 75px;
-  max-width: 150px;
-}
-.header .logo i {
-  color: #cc3586;
-}
-.header .navbar a {
-  font-size: 2.3rem;
-  color: #130f40;
-  margin: 0 1rem;
-}
-.header .navbar a:hover {
-  color: #cc3586;
-}
-.header .icons div,
-.header .icons a {
-  font-size: 2.5rem;
-  margin-left: 2rem;
-}
-.header .search-form {
-  position: absolute;
-  top: 115%;
-  right: -105%;
-  width: 50rem;
-  height: 5.5rem;
-  background: #fff;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  box-shadow: 0 0.5rem 1rem #fa7373;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-}
-.header .search-form.active {
-  right: 2rem;
-  transition: 0.4s linear;
-}
-.header .search-form input {
-  height: 100%;
-  width: 100%;
-  font-size: 1.6rem;
-  text-transform: none;
-  color: #130f40;
-  padding: 0 1.2rem;
-}
-.header .search-form label {
-  font-size: 2.2rem;
-  margin-right: 1.7rem;
 }
 
 #menu-btn {
@@ -350,15 +351,6 @@ section {
 .products .box-container .box .content .price .offer {
   font-size: 2rem;
   color: #cc3586;
-}
-.products .box-container .box .content .stars {
-  font-size: 1.7rem;
-}
-.products .box-container .box .content .stars i {
-  color: gold;
-}
-.products .box-container .box .content .stars span {
-  color: #666;
 }
 
 .deal {

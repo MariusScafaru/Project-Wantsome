@@ -1,73 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
-* {
-  font-family: "Tangerine", serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: 0.2s linear;
-  color: #130f40;
-}
-
-.products .box-container .box .icons a, .header .search-form label, .header .icons div,
-.header .icons a {
-  color: #fff;
-  cursor: pointer;
-  -webkit-text-stroke: 0.1rem #130f40;
-}
-.products .box-container .box .icons a:hover, .header .search-form label:hover, .header .icons div:hover,
-.header .icons a:hover {
-  -webkit-text-stroke: 0.1rem #cc3586;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
-  overflow-x: hidden;
-}
-html::-webkit-scrollbar {
-  width: 1rem;
-}
-html::-webkit-scrollbar-track {
-  background: #fff;
-}
-html::-webkit-scrollbar-thumb {
-  background: #cc3586;
-  border-radius: 5rem;
-}
-
-section {
-  padding: 2rem 9%;
-}
-
-.heading {
-  font-size: 3.5rem;
-  color: #130f40;
-  padding-bottom: 2rem;
-  text-align: center;
-}
-.heading span {
-  color: #cc3586;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.9rem 3rem;
-  border-radius: 0.5rem;
-  background: linear-gradient(#ff7fbf, #cc3586);
-  color: #fff;
-  font-size: 1.7rem;
-  cursor: pointer;
-}
-.btn:hover {
-  background: linear-gradient(#3225bf, #130f40);
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -95,7 +26,7 @@ section {
   color: #cc3586;
 }
 .header .navbar a {
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: #130f40;
   margin: 0 1rem;
 }
@@ -104,8 +35,9 @@ section {
 }
 .header .icons div,
 .header .icons a {
+  display: inline-block;
   font-size: 2.5rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 .header .search-form {
   position: absolute;
@@ -138,129 +70,84 @@ section {
   margin-right: 1.7rem;
 }
 
-#menu-btn {
-  display: none;
+* {
+  font-family: "Tangerine", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  color: #130f40;
 }
 
-.products .filter-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 2.5rem;
-  gap: 2rem;
+.header .icons div,
+.header .icons a, .header .search-form label {
+  color: #fff;
+  cursor: pointer;
+  -webkit-text-stroke: 0.1rem #130f40;
 }
-.products .filter-buttons .buttons {
+.header .icons div:hover,
+.header .icons a:hover, .header .search-form label:hover {
+  -webkit-text-stroke: 0.1rem #cc3586;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background: #cc3586;
+  border-radius: 5rem;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #6a1513;
+  text-align: center;
+  margin-top: 150px;
+}
+.heading span {
+  color: #cc3586;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.9rem 3rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(#ff7fbf, #cc3586);
+  color: #fff;
   font-size: 1.7rem;
-  color: #130f40;
   cursor: pointer;
 }
-.products .filter-buttons .buttons:hover, .products .filter-buttons .buttons.active {
-  color: #cc3586;
+.btn:hover {
+  background: linear-gradient(#3225bf, #130f40);
 }
-.products .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-.products .box-container .box {
-  width: 26rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 0.5rem 1rem #fa7373;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-}
-.products .box-container .box.hide {
+
+#menu-btn {
   display: none;
-}
-.products .box-container .box.active {
-  -webkit-animation: fadeUp 0.4s linear;
-          animation: fadeUp 0.4s linear;
-}
-.products .box-container .box .icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.7);
-  height: 35rem;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  gap: 0.5rem;
-  transform: scale(0);
-  z-index: 1;
-}
-.products .box-container .box .icons a {
-  font-size: 2rem;
-  height: 5rem;
-  width: 5rem;
-  line-height: 5rem;
-  text-align: center;
-  background: #fff;
-  border-radius: 0.5rem;
-}
-.products .box-container .box:hover .icons {
-  transform: scale(1);
-}
-.products .box-container .box .image {
-  height: 35rem;
-  width: 100%;
-  overflow: hidden;
-}
-.products .box-container .box .image img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.products .box-container .box:hover .image img {
-  transform: scale(1.1);
-}
-.products .box-container .box .content {
-  padding: 1rem 1.5rem;
-}
-.products .box-container .box .content h3 {
-  font-size: 2rem;
-  color: #130f40;
-  font-weight: normal;
-}
-.products .box-container .box .content .price {
-  padding: 0.5rem 0;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-.products .box-container .box .content .price .amount {
-  font-size: 2rem;
-  font-weight: bolder;
-  color: #130f40;
-}
-.products .box-container .box .content .price .cut {
-  font-size: 1.5rem;
-  text-decoration: line-through;
-  color: #666;
-}
-.products .box-container .box .content .price .offer {
-  font-size: 2rem;
-  color: #cc3586;
-}
-.products .box-container .box .content .stars {
-  font-size: 1.7rem;
-}
-.products .box-container .box .content .stars i {
-  color: gold;
-}
-.products .box-container .box .content .stars span {
-  color: #666;
 }
 
 .footer {
   background-image: url("/images/background2.jpg");
   background-size: cover;
-  margin-top: 10px;
   padding-top: 0px;
+  margin-bottom: 0px;
 }
 .footer .box-container {
   display: grid;
@@ -321,6 +208,9 @@ section {
   .header {
     padding: 2rem;
   }
+  .heading {
+    margin-top: 170px;
+  }
   section {
     padding: 2rem;
   }
@@ -347,6 +237,9 @@ section {
     font-size: 2rem;
     margin: 2rem;
     display: block;
+  }
+  .heading {
+    margin-top: 160px;
   }
   .header .search-form {
     width: 100%;

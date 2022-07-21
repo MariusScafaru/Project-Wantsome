@@ -6,34 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Land Page</title>
 
-    <!-- icons link extern -->
+    <!-- Icons link extern -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
-    <!-- custom css file link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <!-- Custom css file link  -->
     <link rel="stylesheet" href="css/landSlide.css" />
     <link rel="stylesheet" href="css/landPage.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- header section starts  -->
+    <!-- Header section starts  -->
 
     <header class="header">
       <a href="#" class="logo"><img src="/images/logo.jpg" alt="logo" /></a>
       <nav class="navbar">
-        <a href="#home">home</a>
+        <a href="#">home</a>
+        <a href="#deal"><em style="color: rgb(235, 21, 142)">new!</em></a>
         <a href="/productsPage.html">products</a>
-        <a href="#contact">contact&nbsp;us</a>
         <a href="/sign_up.html">register</a>
-        <a href="/sign_in.html">log&nbsp;out</a>
+        <a href="/sign_in.html">log&nbsp;in</a>
       </nav>
 
       <div class="icons">
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search"></div>
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html">
+          <div class="cart">
+            <i class="fas fa-shopping-cart" style="color: white"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+          </div>
+        </a>
+        <!-- <a href="#" class="fas fa-heart"></a> -->
       </div>
 
       <form action="/action_page.php" method="get" class="search-form">
@@ -50,13 +59,13 @@
     <!-- Header Section Ends -->
 
     <!-- Big Slideshow -->
-    <!-- delay 7 secs transition time 0.4 secs-->
-    <div id="slides" class="ms-slides" data-delay="7000" data-transition="400">
+    <!-- delay 6 secs transition time 0.4 secs-->
+    <div id="slides" class="ms-slides" data-delay="6000" data-transition="400">
       <!-- Slide Show Elements -->
       <div class="ms-slides__inner">
-        <img src="images/banner1.jpg" alt="women" />
-        <img src="images/banner2.jpg" alt="girls" />
-        <img src="images/banner3.jpg" alt="children" />
+        <img src="images/banner1.jpg" width="1905" alt="banner1" />
+        <img src="images/banner2.jpg" width="1905" alt="banner2" />
+        <img src="images/banner3.jpg" width="1905" alt="banner3" />
       </div>
 
       <!-- Show Next and Previous Buttons -->
@@ -72,18 +81,18 @@
       <div class="banner">
         <img src="images/shop_banner_img1.jpg" alt="" />
         <div class="content">
-          <span>special offer</span>
-          <h3>up to 50% off</h3>
-          <a href="#" class="btn">shop now</a>
+          <span>midnight sale</span>
+          <h3>up to 35% off</h3>
+          <a href="#" class="btn">soon</a>
         </div>
       </div>
 
       <div class="banner">
         <img src="images/shop_banner_img2.jpg" alt="" />
         <div class="content">
-          <span>special offer</span>
+          <span>next special offer</span>
           <h3>up to 50% off</h3>
-          <a href="#" class="btn">shop now</a>
+          <a href="#" class="btn">soon</a>
         </div>
       </div>
     </section>
@@ -96,7 +105,7 @@
       <h1 class="heading">exclusive products</h1>
 
       <div class="filter-buttons">
-        <div class="buttons active" data-filter="all">all the exclusives</div>
+        <div class="buttons active" data-filter="all">all</div>
         <div class="buttons" data-filter="arrivals">new arrivals</div>
         <div class="buttons" data-filter="special">special offer</div>
         <div class="buttons" data-filter="seller">best seller</div>
@@ -105,243 +114,216 @@
       <div class="box-container">
         <div class="box" data-item="special">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <a href="/productDetails.html" class="fas fa-eye"></a>
           </div>
           <div class="image">
-            <img src="images/product_img2.jpg" alt="" />
+            <img src="imgProducts/blackA(1).jpg" alt="" />
           </div>
           <div class="content">
-            <h3>product name</h3>
+            <h3>Casual Dress</h3>
             <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
+              <div class="amount">$ 200</div>
+              <div class="cut">$ 240</div>
               <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
+              <div class="buttons">
+                <i class="bi bi-dash-lg"></i>
+                <div id="${id}" class="quantity">0</div>
+                <i class="bi bi-plus-lg"></i>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="box" data-item="seller">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="image">
-            <img src="images/product_img3.jpg" alt="" />
+            <img src="imgProducts/blueA(1).jpg" alt="" />
           </div>
           <div class="content">
-            <h3>product name</h3>
+            <h3>Office Dress</h3>
             <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
+              <div class="amount">$ 100</div>
+              <div class="cut">$ 120</div>
               <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
+              <div class="buttons">
+                <i class="bi bi-dash-lg"></i>
+                <div id="${id}" class="quantity">0</div>
+                <i class="bi bi-plus-lg"></i>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="box" data-item="arrivals">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="image">
-            <img src="images/product_img4.jpg" alt="" />
+            <img src="/imgProducts/brownA(1).jpg" alt="" />
           </div>
           <div class="content">
-            <h3>product name</h3>
+            <h3>Casual Dress</h3>
             <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
+              <div class="amount">$ 200</div>
+              <div class="cut">$ 240</div>
               <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
+              <div class="buttons">
+                <i class="bi bi-dash-lg"></i>
+                <div id="${id}" class="quantity">0</div>
+                <i class="bi bi-plus-lg"></i>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="box" data-item="arrivals">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="image">
-            <img src="images/product_img6.jpg" alt="" />
+            <img src="/imgProducts/cyanA(1).jpg" alt="" />
           </div>
           <div class="content">
-            <h3>product name</h3>
+            <h3>Party Dress</h3>
             <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
+              <div class="amount">$ 200</div>
+              <div class="cut">$ 240</div>
               <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
+              <div class="buttons">
+                <i class="bi bi-dash-lg"></i>
+                <div id="${id}" class="quantity">0</div>
+                <i class="bi bi-plus-lg"></i>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="box" data-item="special">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="image">
-            <img src="images/product_img7.jpg" alt="" />
+            <img src="/imgProducts/greenA(1).jpg" alt="" />
           </div>
           <div class="content">
-            <h3>product name</h3>
+            <h3>Cocktail Dress</h3>
             <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
+              <div class="amount">$ 200</div>
+              <div class="cut">$ 240</div>
               <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
+              <div class="buttons">
+                <i class="bi bi-dash-lg"></i>
+                <div id="${id}" class="quantity">0</div>
+                <i class="bi bi-plus-lg"></i>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="box" data-item="seller">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="image">
-            <img src="images/product_img8.jpg" alt="" />
+            <img src="/imgProducts/pinkD(1).jpg" alt="" />
           </div>
           <div class="content">
-            <h3>product name</h3>
+            <h3>Gim Suit</h3>
             <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
+              <div class="amount">$ 150</div>
+              <div class="cut">$ 188</div>
               <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
+              <div class="buttons">
+                <i class="bi bi-dash-lg"></i>
+                <div id="${id}" class="quantity">0</div>
+                <i class="bi bi-plus-lg"></i>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="box" data-item="seller">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="image">
-            <img src="images/product_img9.jpg" alt="" />
+            <img src="/imgProducts/indigoA(1).jpg" alt="" />
           </div>
           <div class="content">
-            <h3>product name</h3>
+            <h3>Floral Skirt</h3>
             <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
+              <div class="amount">$ 100</div>
+              <div class="cut">$ 125</div>
               <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
+              <div class="buttons">
+                <i class="bi bi-dash-lg"></i>
+                <div id="${id}" class="quantity">0</div>
+                <i class="bi bi-plus-lg"></i>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="box" data-item="special">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="image">
-            <img src="images/product_img11.jpg" alt="" />
+            <img src="/imgProducts/orangeA(1).jpg" alt="" />
           </div>
           <div class="content">
-            <h3>product name</h3>
+            <h3>Orange Overcoat</h3>
             <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
+              <div class="amount">$ 175</div>
+              <div class="cut">$ 220</div>
               <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
+              <div class="buttons">
+                <i class="bi bi-dash-lg"></i>
+                <div id="${id}" class="quantity">0</div>
+                <i class="bi bi-plus-lg"></i>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="box" data-item="seller">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="image">
-            <img src="images/product_img12.jpg" alt="" />
+            <img src="/imgProducts/magentaA(1).jpg" alt="" />
           </div>
           <div class="content">
-            <h3>product name</h3>
+            <h3>Magenta Skirt</h3>
             <div class="price">
-              <div class="amount">lei 20.00</div>
-              <div class="cut">lei 25.00</div>
+              <div class="amount">$ 100</div>
+              <div class="cut">$ 120</div>
               <div class="offer">20% off</div>
-            </div>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <span>(50)</span>
+              <div class="buttons">
+                <i class="bi bi-dash-lg"></i>
+                <div id="${id}" class="quantity">0</div>
+                <i class="bi bi-plus-lg"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -358,10 +340,13 @@
       </div>
 
       <div class="content">
-        <span>new season trending!</span>
-        <h3>summer collection</h3>
-        <p>sale get up to 50% off</p>
-        <a href="#" class="btn">shop now</a>
+        <span>don't miss seasons trending!</span>
+        <h3>
+          summer<span style="color: rgb(247, 102, 126)">&#x2764;</span>autumn
+          collection
+        </h3>
+        <p>sale for limited time</p>
+        <a href="#" class="btn">soon</a>
       </div>
     </section>
 
@@ -427,7 +412,7 @@
           <a href="#"> <i class="fas fa-arrow-right"></i> dresses </a>
           <a href="#"> <i class="fas fa-arrow-right"></i> skirts </a>
           <a href="#"> <i class="fas fa-arrow-right"></i> jackets </a>
-          <a href="#"> <i class="fas fa-arrow-right"></i> tracksuits </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> gim suits </a>
         </div>
 
         <div class="box">
@@ -439,9 +424,7 @@
           <a href="#products">
             <i class="fas fa-arrow-right"></i> exclusive products
           </a>
-          <a href="#deal">
-            <i class="fas fa-arrow-right"></i> summer collection
-          </a>
+          <a href="#deal"> <i class="fas fa-arrow-right"></i> collections </a>
         </div>
 
         <div class="box">
@@ -467,5 +450,7 @@
     <script src="/js/landSlide.js"></script>
     <script src="/js/landPage.js"></script>
   </body>
+  <script src="src/Data.js"></script>
+  <script src="src/main.js"></script>
 </html>
 <!-- Project In Progress -->

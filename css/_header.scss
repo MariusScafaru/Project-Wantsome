@@ -1,0 +1,81 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: $box-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9%;
+  background-image: url("/images/background2.jpg");
+  background-size: cover;
+  .logo {
+    font-size: 2.5rem;
+    color: $black;
+    font-weight: bolder;
+    img {
+      max-height: 75px;
+      max-width: 150px;
+    }
+    i {
+      color: $red;
+    }
+  }
+
+  .navbar {
+    a {
+      font-size: 2rem;
+      color: $black;
+      margin: 0 1rem;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  .icons div,
+  .icons a {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    @extend %text-stroke;
+  }
+
+  .search-form {
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    width: 50rem;
+    height: 5.5rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    border: $border;
+
+    &.active {
+      right: 2rem;
+      transition: 0.4s linear;
+    }
+
+    input {
+      height: 100%;
+      width: 100%;
+      font-size: 1.6rem;
+      text-transform: none;
+      color: $black;
+      padding: 0 1.2rem;
+    }
+
+    label {
+      font-size: 2.2rem;
+      @extend %text-stroke;
+      margin-right: 1.7rem;
+    }
+  }
+}

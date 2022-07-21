@@ -7,7 +7,7 @@ let email = document.getElementById("email");
 let password = document.getElementById("password");
 
 function logIn(event) {
-  let users = JSON.parse(localStorage.getItem("userData")) || [];
+  let users = JSON.parse(localStorage.getItem("userDetails")) || [];
   let user = {
     firstName: firstName.value,
     lastName: lastName.value,
@@ -21,19 +21,19 @@ function logIn(event) {
     "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$";
   let exist =
     users.length &&
-    JSON.parse(localStorage.getItem("userData")).some(
+    JSON.parse(localStorage.getItem("userDetails")).some(
       (data) => data.email === user.email
     );
   if (!exist) {
     if (!user.email.match(emailRegex)) {
       alert("Invalid email!");
       event.preventDefault();
-    } else if (user.password.length < 9) {
-      alert("At least 9 characters needed!");
+    } else if (user.password.length < 4) {
+      alert("At least 4 characters needed!");
       event.preventDefault();
     } else {
       users.push(user);
-      localStorage.setItem("userData", JSON.stringify(users));
+      localStorage.setItem("userDetails", JSON.stringify(users));
       form.reset();
     }
   } else {

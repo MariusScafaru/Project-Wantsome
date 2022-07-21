@@ -4,7 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
   text-transform: capitalize;
+  transition: 0.2s linear;
   color: #130f40;
 }
 
@@ -13,12 +17,13 @@ body {
 }
 
 .card-wrapper {
-  padding-top: 10rem;
+  padding-top: 0px;
   max-width: 1100px;
   margin: auto;
 }
 
 .card {
+  padding-top: 170px;
   display: flex;
   justify-content: space-around;
 }
@@ -190,23 +195,19 @@ label.star:before {
   font-weight: 400;
 }
 
-.purchase-info {
-  margin: 1rem 0;
-}
-
 .purchase-info input,
 .purchase-info .btn {
   border: 1.5px solid #ddd;
   border-radius: 0.5rem;
   text-align: center;
   font-size: 1.7rem;
-  padding: 0.9rem 1rem;
+  padding: 0.9rem 0.5rem;
   outline: 0;
   margin-right: 1.4rem;
 }
 
 .purchase-info input {
-  width: 60px;
+  width: 78px;
 }
 
 .purchase-info .btn {
@@ -218,48 +219,23 @@ label.star:before {
   background: linear-gradient(#ff7fbf, #cc3586);
 }
 
-.purchase-info .btn:last-of-type {
-  background: linear-gradient(#ff7fbf, #cc3586);
-}
-
 .purchase-info .btn:hover {
   background: linear-gradient(#3225bf, #130f40);
 }
 
-.share {
-  display: flex;
-  padding-top: 3rem;
-  text-align: center;
-}
-
-.share a {
-  font-size: 2rem;
-  height: 5rem;
-  width: 5rem;
-  line-height: 5rem;
-  border-radius: 50%;
-  background: linear-gradient(#3225bf, #130f40);
-  color: #fff;
-  margin: 0.3rem;
-}
-
-.share a:hover {
-  background: linear-gradient(#ff7fbf, #cc3586);
-  transform: rotate(360deg);
-}
-
 @media (max-width: 991px) {
-  .card {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5rem;
-  }
   .card-wrapper {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .card {
+    padding-top: 900px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
   }
   .product-imgs {
     display: flex;
@@ -271,6 +247,17 @@ label.star:before {
   }
   .product-content {
     padding-top: 0;
+  }
+  .footer {
+    margin-top: 67rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .footer {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=productDetails.css.map *//*# sourceMappingURL=productDetails.css.map */

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
 @import "_colors";
+@import "_header";
 
 * {
   font-family: "Tangerine", serif;
@@ -55,11 +56,10 @@ section {
 }
 
 .heading {
-  font-size: 3.5rem;
-  color: $black;
-  padding-bottom: 2rem;
+  font-size: 2rem;
+  color: $darkRed;
   text-align: center;
-
+  margin-top: 150px;
   span {
     color: $red;
   }
@@ -80,233 +80,143 @@ section {
   }
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  box-shadow: $box-shadow;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 9%;
-  background-image: url("/images/background2.jpg");
-  background-size: cover;
-  .logo {
-    font-size: 2.5rem;
-    color: $black;
-    font-weight: bolder;
-    img {
-      max-height: 75px;
-      max-width: 150px;
-    }
-    i {
-      color: $red;
-    }
-  }
-
-  .navbar {
-    a {
-      font-size: 2.3rem;
-      color: $black;
-      margin: 0 1rem;
-
-      &:hover {
-        color: $red;
-      }
-    }
-  }
-
-  .icons div,
-  .icons a {
-    font-size: 2.5rem;
-    margin-left: 2rem;
-    @extend %text-stroke;
-  }
-
-  .search-form {
-    position: absolute;
-    top: 115%;
-    right: -105%;
-    width: 50rem;
-    height: 5.5rem;
-    background: #fff;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    box-shadow: $box-shadow;
-    border: $border;
-
-    &.active {
-      right: 2rem;
-      transition: 0.4s linear;
-    }
-
-    input {
-      height: 100%;
-      width: 100%;
-      font-size: 1.6rem;
-      text-transform: none;
-      color: $black;
-      padding: 0 1.2rem;
-    }
-
-    label {
-      font-size: 2.2rem;
-      @extend %text-stroke;
-      margin-right: 1.7rem;
-    }
-  }
-}
-
 #menu-btn {
   display: none;
 }
 
-.products {
-  .filter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 2.5rem;
-    gap: 2rem;
+// the scss of landPage.html for products
 
-    .buttons {
-      font-size: 1.7rem;
-      color: $black;
-      cursor: pointer;
+// .products {
+//   .filter-buttons {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     padding-bottom: 2.5rem;
+//     margin-top: 10px;
+//     gap: 2rem;
 
-      &:hover,
-      &.active {
-        color: $red;
-      }
-    }
-  }
+//     .buttons {
+//       font-size: 1.7rem;
+//       color: $black;
+//       cursor: pointer;
 
-  .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
+//       &:hover,
+//       &.active {
+//         color: $red;
+//       }
+//     }
+//   }
 
-    .box {
-      width: 26rem;
-      border-radius: 0.5rem;
-      overflow: hidden;
-      position: relative;
-      box-shadow: $box-shadow;
-      border: $border;
+//   .box-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 1.5rem;
+//     justify-content: center;
 
-      &.hide {
-        display: none;
-      }
+//     .box {
+//       width: 26rem;
+//       border-radius: 0.5rem;
+//       overflow: hidden;
+//       position: relative;
+//       box-shadow: $box-shadow;
+//       border: $border;
 
-      &.active {
-        animation: fadeUp 0.4s linear;
-      }
+//       &.hide {
+//         display: none;
+//       }
 
-      .icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.7);
-        height: 35rem;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        gap: 0.5rem;
-        transform: scale(0);
-        z-index: 1;
+//       &.active {
+//         animation: fadeUp 0.4s linear;
+//       }
 
-        a {
-          font-size: 2rem;
-          height: 5rem;
-          width: 5rem;
-          line-height: 5rem;
-          text-align: center;
-          background: #fff;
-          border-radius: 0.5rem;
-          @extend %text-stroke;
-        }
-      }
+//       .icons {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         background: rgba(0, 0, 0, 0.7);
+//         height: 35rem;
+//         width: 100%;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         gap: 0.5rem;
+//         transform: scale(0);
+//         z-index: 1;
 
-      &:hover .icons {
-        transform: scale(1);
-      }
+//         a {
+//           font-size: 2rem;
+//           height: 5rem;
+//           width: 5rem;
+//           line-height: 5rem;
+//           text-align: center;
+//           background: #fff;
+//           border-radius: 0.5rem;
+//           @extend %text-stroke;
+//         }
+//       }
 
-      .image {
-        height: 35rem;
-        width: 100%;
-        overflow: hidden;
+//       &:hover .icons {
+//         transform: scale(1);
+//       }
 
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-        }
-      }
+//       .image {
+//         height: 35rem;
+//         width: 100%;
+//         overflow: hidden;
 
-      &:hover .image img {
-        transform: scale(1.1);
-      }
+//         img {
+//           height: 100%;
+//           width: 100%;
+//           object-fit: cover;
+//         }
+//       }
 
-      .content {
-        padding: 1rem 1.5rem;
+//       &:hover .image img {
+//         transform: scale(1.1);
+//       }
 
-        h3 {
-          font-size: 2rem;
-          color: $black;
-          font-weight: normal;
-        }
+//       .content {
+//         padding: 1rem 1.5rem;
 
-        .price {
-          padding: 0.5rem 0;
-          display: flex;
-          gap: 0.5rem;
-          align-items: center;
+//         h3 {
+//           font-size: 2rem;
+//           color: $black;
+//           font-weight: normal;
+//         }
 
-          .amount {
-            font-size: 2rem;
-            font-weight: bolder;
-            color: $black;
-          }
+//         .price {
+//           padding: 0.5rem 0;
+//           display: flex;
+//           gap: 0.5rem;
+//           align-items: center;
 
-          .cut {
-            font-size: 1.5rem;
-            text-decoration: line-through;
-            color: $light-color;
-          }
+//           .amount {
+//             font-size: 2rem;
+//             font-weight: bolder;
+//             color: $black;
+//           }
 
-          .offer {
-            font-size: 2rem;
-            color: $red;
-          }
-        }
+//           .cut {
+//             font-size: 1.5rem;
+//             text-decoration: line-through;
+//             color: $light-color;
+//           }
 
-        .stars {
-          font-size: 1.7rem;
-
-          i {
-            color: gold;
-          }
-
-          span {
-            color: $light-color;
-          }
-        }
-      }
-    }
-  }
-}
+//           .offer {
+//             font-size: 2rem;
+//             color: $red;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 .footer {
   background-image: url("/images/background2.jpg");
   background-size: cover;
-  margin-top: 10px;
   padding-top: 0px;
+  margin-bottom: 0px;
   .box-container {
     @include grid(15rem);
     text-align: justify;
@@ -379,6 +289,9 @@ section {
   .header {
     padding: 2rem;
   }
+  .heading {
+    margin-top: 170px;
+  }
 
   section {
     padding: 2rem;
@@ -408,6 +321,9 @@ section {
       margin: 2rem;
       display: block;
     }
+  }
+  .heading {
+    margin-top: 160px;
   }
 
   .header .search-form {

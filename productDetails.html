@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Detail</title>
 
-    <!-- icons link  -->
+    <!-- Icons Link  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -21,13 +21,15 @@
     <link rel="stylesheet" href="css/productDetails.css" />
   </head>
   <body>
-    <!-- header section starts  -->
+    <!-- Header Section Starts  -->
     <header class="header">
       <a href="#" class="logo"><img src="/images/logo.jpg" alt="logo" /></a>
       <nav class="navbar">
         <a href="/landPage.html">home</a>
-        <a href="/landPage.html?#products">products</a>
-        <a href="/landPage.html?#contact">contact&nbsp;us</a>
+        <a href="/landPage.html#deal"
+          ><em style="color: rgb(235, 21, 142)">new!</em></a
+        >
+        <a href="/productsPage.html">products</a>
         <a href="/sign_up.html">register</a>
         <a href="/sign_in.html">log&nbsp;in</a>
       </nav>
@@ -35,8 +37,13 @@
       <div class="icons">
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search"></div>
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html">
+          <div class="cart">
+            <i class="fas fa-shopping-cart" style="color: white"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+          </div>
+        </a>
+        <!-- <a href="#" class="fas fa-heart"></a> -->
       </div>
 
       <form action="/action_page.php" method="get" class="search-form">
@@ -49,40 +56,40 @@
         <label for="search-box" class="fas fa-search"></label>
       </form>
     </header>
-    <!-- header section ends -->
+    <!-- Header Section Ends -->
 
-    <!-- card section starts -->
+    <!-- Card Section Starts -->
     <div class="card-wrapper">
       <div class="card">
         <!-- part left -->
         <div class="product-imgs">
           <div class="img-display">
             <div class="img-showcase">
-              <img src="/images/product_img1.jpg" alt="product image" />
-              <img src="/images/product_img2.jpg" alt="product image" />
-              <img src="/images/product_img3.jpg" alt="product image" />
-              <img src="/images/product_img4.jpg" alt="product image" />
+              <img src="/imgProducts/blackA(1).jpg" alt="product image" />
+              <img src="/imgProducts/blackA(2).jpg" alt="product image" />
+              <img src="/imgProducts/blackA(3).jpg" alt="product image" />
+              <img src="/imgProducts/blackA(4).jpg" alt="product image" />
             </div>
           </div>
           <div class="img-select">
             <div class="img-item">
               <a href="#" data-id="1">
-                <img src="/images/product_img1.jpg" alt="product image" />
+                <img src="/imgProducts/blackA(1).jpg" alt="product image" />
               </a>
             </div>
             <div class="img-item">
               <a href="#" data-id="2">
-                <img src="/images/product_img2.jpg" alt="product image" />
+                <img src="/imgProducts/blackA(2).jpg" alt="product image" />
               </a>
             </div>
             <div class="img-item">
               <a href="#" data-id="3">
-                <img src="/images/product_img3.jpg" alt="product image" />
+                <img src="/imgProducts/blackA(3).jpg" alt="product image" />
               </a>
             </div>
             <div class="img-item">
               <a href="#" data-id="4">
-                <img src="/images/product_img4.jpg" alt="product image" />
+                <img src="/imgProducts/blackA(4).jpg" alt="product image" />
               </a>
             </div>
           </div>
@@ -106,8 +113,8 @@
           </div>
 
           <div class="product-price">
-            <p class="new-price">New Price: <span>lei 20.00</span></p>
-            <p class="last-price">Old Price: <span>lei 25.00</span></p>
+            <p class="new-price">New Price: <span>$ 200</span></p>
+            <p class="last-price">Old Price: <span>$ 240</span></p>
             <div class="offer">20% off</div>
           </div>
 
@@ -119,31 +126,66 @@
               modi laborum quasi cumque autem, veritatis animi neque hic sunt
               fuga voluptas exercitationem!
             </p>
-            <ul>
-              <li>Color: <span>Black</span></li>
-              <li>Available: <span>in stock</span></li>
-              <li>Category: <span>Product Name</span></li>
-              <li>Shipping Area: <span>All the world</span></li>
-              <li>Shipping Fee: <span>Free</span></li>
-            </ul>
+            <p>Color: <span>Black</span></p>
+            <p>Available: <span>in stock</span></p>
+            <p>Category: <span>Product Name</span></p>
+            <p>Shipping Area: <span>All the world</span></p>
+            <p>Shipping Fee: <span>Free</span></p>
           </div>
 
           <div class="purchase-info">
             <input type="number" min="0" value="1" />
             <button type="button" class="btn">Add to Cart</button>
-            <button type="button" class="btn">Compare</button>
-          </div>
-
-          <div class="share">
-            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-            <a href="https://twitter.com/" class="fab fa-twitter"></a>
-            <a href="https://ro.pinterest.com/" class="fab fa-pinterest"></a>
-            <a href="https://ro.linkedin.com/" class="fab fa-linkedin"></a>
-            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
           </div>
         </div>
       </div>
     </div>
+    <!-- Card Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>category</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> dresses </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> skirts </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> jackets </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> tracksuits </a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="/landPage.html"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="/landPage.html#special">
+            <i class="fas fa-arrow-right"></i> special offer
+          </a>
+          <a href="/landPage.html#products">
+            <i class="fas fa-arrow-right"></i> exclusive products
+          </a>
+          <a href="/landPage.html#deal">
+            <i class="fas fa-arrow-right"></i> summer collection
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my orders </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> my favorites </a>
+          <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+      </div>
+
+      <div class="share">
+        <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/" class="fab fa-twitter"></a>
+        <a href="https://ro.pinterest.com/" class="fab fa-pinterest"></a>
+        <a href="https://ro.linkedin.com/" class="fab fa-linkedin"></a>
+        <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+      </div>
+    </section>
+    <!-- Footer Section Ends -->
+
     <script src="/js/productDetails.js"></script>
   </body>
 </html>

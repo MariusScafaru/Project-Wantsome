@@ -37,7 +37,7 @@ body {
 h1 {
   animation-name: top;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-timing-function: ease;
   position: absolute;
   min-width: 50%;
@@ -48,7 +48,7 @@ h1 {
   margin: 230px auto auto;
   animation-name: from_left;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   height: 30px;
   width: 90%;
 }
@@ -57,11 +57,11 @@ h1 {
   0% {
     margin-bottom: 600px;
   }
-  60% {
-    margin-bottom: 200px;
-  }
+  /* 50% {
+    margin-bottom: 300px;
+  } */
   100% {
-    margin-bottom: 200px;
+    margin-bottom: 34px;
   }
 }
 
@@ -69,11 +69,11 @@ h1 {
   0% {
     right: 100%;
   }
-  60% {
+  /* 60% {
     right: 0%;
-  }
+  } */
   100% {
-    right: 0%;
+    right: 5%;
   }
 }
 
@@ -100,8 +100,9 @@ img {
 }
 
 form .details_user .input_box {
+  margin-right: 15px;
   margin-bottom: 15px;
-  width: calc(50% - 20px);
+  width: calc(50% - 30px);
 }
 
 .details_user .input_box input {
