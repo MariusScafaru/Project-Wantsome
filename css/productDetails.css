@@ -242,7 +242,7 @@ label.star:before {
     flex-direction: column;
     justify-content: center;
     margin: 0 5rem 0 5rem;
-    max-width: 50rem;
+    max-width: 40rem;
     min-width: 34rem;
   }
   .product-content {
